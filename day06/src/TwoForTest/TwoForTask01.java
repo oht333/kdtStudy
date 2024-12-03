@@ -18,17 +18,36 @@ public class TwoForTask01 {
 			System.out.println("*");
 		}
 	   
-	   System.out.println();
+	   System.out.println("============================");
       
 //      2번 : 피라미드와 유사하지만 좌측 정렬
 //      *
 //      * * *
 //      * * * * *
 //      * * * * * * *
+	   for(int i=0;i<=3;i++) {
+		   System.out.println("");
+		   for(int j=1;j<=(2*i)+1;j++) {
+			   System.out.print("* ");
+		   }
+	   }
 	   
+//	   System.out.println("\n");
+//	   
+//	      for(int i = 1; i <= 4; i++) {
+////	         System.out.println(i);
+//	         for(int j = 1; j <= 2 * i - 1; j++) {
+////	            System.out.println("i : " + i + ", j : " + j);
+//	            System.out.print("*");
+//	         }
+//	         System.out.println();
+//	      }
+
 	   
-	   
-	   
+	   System.out.println();
+	   System.out.println();
+	   System.out.println("============================");
+	   System.out.println();
 	   
       
 //      3번 : 피라미드 (for문이 총 3개-> 어떻게 사용될지 먼저 생각하기)
