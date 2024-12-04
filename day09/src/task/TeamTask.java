@@ -2,9 +2,9 @@ package task;
 
 import java.util.Scanner;
 
-public class TeamTask {
+public class TeamTask {		//Scanner 입력메소드, while문, if문, 논리연산자(||) 후위감소(--), .charAt(i) .equals() 
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {	
 //		Q2. 귀여운 척 금지
 //		---------로직---------
 //		1. 입력받기 위한 Scanner 클래스 import
@@ -92,14 +92,14 @@ public class TeamTask {
 		for (int i = 0; i < cutePhrase.length(); i++) {
 			foo = cutePhrase.charAt(i) + "";
 			if (foo.equals("냥") || foo.equals("용") || foo.equals("냠") || foo.equals("쪄")) {
-				result += (foo + foo);
+				result += (foo + foo);		//입력한 값에 귀여운 워딩이 한번더 붙여지게 된다
 				flag = 1;
 			} else {
-				result += foo;
+				result += foo;				//입력한 값 그대로 나온다
 			}
 		}
-		System.out.println(result);
-		return flag;
+		System.out.println(result);			//결과값 출력
+		return flag;						//사망플래그 생존:0 사망:1
 	}
 
 }

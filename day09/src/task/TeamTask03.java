@@ -2,7 +2,7 @@ package task;
 
 import java.util.Scanner;
 
-public class TeamTask03 {
+public class TeamTask03 {		//사용한 기능 : if문, for문, 복합할당연산자(*=)
 
 	public static void main(String[] args) {
 //		Q1. 좀비 바이러스 발생
@@ -20,7 +20,7 @@ public class TeamTask03 {
 		System.out.print("최초 좀비의 수는 몇명이었나요? ");
 		int zombie = sc.nextInt();
 		if (zombie<= 1) {
-			System.out.println("초기 진압 되었습니다.");
+			System.out.println("초기 진압 되었습니다.");			//1마리 뿐이여서 초기진압
 		} else {
 			System.out.println("6시간 후의 좀비의 수는 : " + tt.calculatorZombie(zombie) + " 입니다.");        
 		}

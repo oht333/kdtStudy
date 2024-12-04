@@ -2,7 +2,7 @@ package task;
 
 import java.util.Scanner;
 
-public class TeamTask02 {
+public class TeamTask02 {		//Scanner 입력메소드, 나머지연산자, switch문
 
 	public static void main(String[] args) {
 //		Q3. 오늘의 운세 확인
@@ -47,10 +47,10 @@ public class TeamTask02 {
 //	6. 리턴타입 : String으로 변경
 	String tellFortune(String name) {
         int unicodeSum = 0;
-        for (int i = 0; i < name.length(); i++) {
+        for (int i = 0; i < name.length(); i++) {		//이름의 각 글자의 아스키코드
             unicodeSum += name.charAt(i);
         }
-        int result = unicodeSum % 5;
+        int result = unicodeSum % 5;					//나머지 1, 2, 3, 4를 통해 case 출력
         
         switch (result) {
             case 1: return "약간의 어려움이 있을 수 있어요.";
