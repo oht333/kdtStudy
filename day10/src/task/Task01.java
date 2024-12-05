@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Task01 {
 
+	/*
 	//1. add 매서드 : for-each문을 이용하여 각 배열의 숫자들의 합을 res에 저장
 	int add(int[] arr) {
 		int res = 0;
@@ -83,6 +84,9 @@ public class Task01 {
 		System.out.println("배열에 있는 수를 뺀 값 : " + t1.subtract(arr));
 		System.out.println("배열에 있는 수를 곱한 값 : " + t1.multiply(arr));
 		System.out.println("배열에 있는 수를 나눈 값 : " + t1.divide(arr));
+		*/
+		
+		
 		
 //		문제2. 
 //
@@ -99,6 +103,10 @@ public class Task01 {
 //		   잔액이 부족해지면 "잔액이 부족합니다." 출력하고 프로그램 종료(탈출)
 //		   }
 //
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
 //		문제3.
 //		★메소드 회원가입★(메소드로 코드 분리하기)★
 //
@@ -110,6 +118,5 @@ public class Task01 {
 //		→ 겹치는거 없고, 비번도 다 맞으면 "회원가입 성공" 후 끝
 //		→ 최종출력 "userName님 환영합니다, 아이디는 userId, 비밀번호는 암호화된 {아스키코드값} 입니다"
 //		└ 배열, 메소드, for문, if문, 형변환
-	}
-
 }
+
