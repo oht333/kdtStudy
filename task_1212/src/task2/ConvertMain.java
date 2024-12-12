@@ -15,7 +15,11 @@ public class ConvertMain {
 	//1) main메소드 생성
 	//2) Scanner import
 	//3) String str = sc.nextLine();
-	//4) 
+	//4) 1번문제랑 똑같이 validate()메소드를 만들어 for문으로 문자열 쪼개서 숫자여부 조회
+	//5) 리턴으로 parseInt한 값을 받음
+	//6) throw, throws 적용
+	//7) 결과값나오는 간단로직 작성후 try catch
+	//8) finally로 sc.close()
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String str = " ";
