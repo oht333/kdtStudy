@@ -3,25 +3,29 @@ package task;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
+
+//1) Random클래스 이용해서 1부터 45중 임의의 숫자 뽑기
+//2) List<> 객체 생성
+//3) while문 사용해서 6개의 번호 뽑기
+//3-2)  이미 포함된 숫자인지 contain사용해서 확인, 아니면 add
+//4) Collections.sort 사용해서 정렬
 
 public class LottoList {
 	public static void main(String[] args) {
-		// ArrayList, HashSet을 사용하여 중복을 허용하지 않는 6개의 랜덤숫자를 저장
-		// Random 클래스를 이용하여 1부터 45사이의 랜덤 숫자를 생성하고 
-		//정렬해서 출력
-		List<Integer> list = new ArrayList<>();
-		
-		System.out.println("로또 자동으로 선택하셨습니다. 6개의 랜덤 숫자를 뽑습니다.");
-		
-		for(int i=1; i<=6; i++) {
-			int temp = (int)(Math.random() * 44) + 1;
-			list.add(temp);
-		}
-		
-		Collections.sort(list);
-		
-		System.out.println("당신이 뽑은 당첨번호숫자 : " + list);
-		
-		
-	}
+        Random random = new Random();
+
+        List<Integer> lottoNum = new ArrayList<>();
+
+        while (lottoNum.size() < 6) {
+            int num = random.nextInt(45) + 1; 
+            if (!lottoNum.contains(num)) { 
+            	lottoNum.add(num);
+            }
+        }
+
+        Collections.sort(lottoNum);
+
+        System.out.println("생성된 로또 번호: " + lottoNum);
+    }
 }
